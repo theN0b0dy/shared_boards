@@ -4,9 +4,9 @@ from datetime import timedelta
 from flask_jwt_extended import JWTManager
 
 
-import config
-import views.auth as auth
-import views.board as board
+from . import config
+from .views import auth as auth
+from .views import board as board
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "d06300c98fd89eaa08a1838356267a86"

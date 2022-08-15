@@ -1,7 +1,7 @@
 from pymodm import MongoModel, fields
 from pymodm.manager import Manager
 
-from query_set import UserQuerySet
+from .query_set import UserQuerySet
 
 userQuerySetManager = Manager.from_queryset(UserQuerySet)
 

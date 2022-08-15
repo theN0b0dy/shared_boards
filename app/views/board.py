@@ -5,9 +5,9 @@ from flask_jwt_extended import jwt_required, get_jwt_identity
 from flask import request, jsonify
 from functools import wraps
 
-from util import get_user
-from models import Board
-import config
+from ..util import get_user
+from ..models import Board
+from .. import config
 
 redis_client = redis.Redis(host=config.REDIS_HOST, port=config.REDIS_PORT, db=0)
 

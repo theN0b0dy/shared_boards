@@ -5,8 +5,7 @@ import redis
 from pymodm.errors import DoesNotExist
 from  werkzeug.security import generate_password_hash, check_password_hash
 
-import config
-from models import User
+from ..models import User
 
 
 # jwt_redis_blocklist = redis.StrictRedis(
